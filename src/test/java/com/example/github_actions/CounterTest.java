@@ -30,4 +30,18 @@ public class CounterTest {
         counter.increment();
         assert counter.getCount() == 2;
     }
+
+    @Test
+    public void testAdd() {
+        Counter counter = new Counter();
+        counter.add(5);
+        assert counter.getCount() == 5;
+    }
+
+    @Test
+    public void testSubtract() {
+        Counter counter = new Counter();
+        counter.subtract(5);
+        assert counter.getCount() == -5;
+    }
 }
